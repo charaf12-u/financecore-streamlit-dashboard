@@ -12,13 +12,13 @@ FinDash est un tableau de bord analytique multipage développé avec **Streamlit
 
 | KPIs & Transactions | Segmentation & CA | Export & Summary |
 |---|---|---|
-| ![exec1](asset/images/image_project/Capture%20d'écran%202026-04-17%20154424.png) | ![exec2](asset/images/image_project/Capture%20d'écran%202026-04-17%20154515.png) | ![exec3](asset/images/image_project/Capture%20d'écran%202026-04-17%20154537.png) |
+| ![exec1](asset/images/image_project/Capture%20d’écran%202026-04-17%20154424.png) | ![exec2](asset/images/image_project/Capture%20d’écran%202026-04-17%20154515.png) | ![exec3](asset/images/image_project/Capture%20d’écran%202026-04-17%20154537.png) |
 
 ### 🔸 Risk Analysis — Analyse des Risques Clients
 
 | Heatmap Corrélation | Scatter Plot Risques | Top Clients à Risque |
 |---|---|---|
-| ![risk1](asset/images/image_project/Capture%20d'écran%202026-04-17%20154601.png) | ![risk2](asset/images/image_project/Capture%20d'écran%202026-04-17%20154621.png) | ![risk3](asset/images/image_project/Capture%20d'écran%202026-04-17%20154639.png) |
+| ![risk1](asset/images/image_project/Capture%20d’écran%202026-04-17%20154601.png) | ![risk2](asset/images/image_project/Capture%20d’écran%202026-04-17%20154621.png) | ![risk3](asset/images/image_project/Capture%20d’écran%202026-04-17%20154639.png) |
 
 ---
 
