@@ -1,0 +1,144 @@
+/* --> font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --> body */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --> hide streamlit default */
+header {visibility: hidden;}
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+[data-testid="stSidebarNav"] {display: none !important;}
+
+/* --> block container */
+.block-container {
+    padding-top: 1rem !important;
+    padding-left: 2rem;
+}
+
+/* --> root variables */
+:root {
+    --gold: #d4af37;
+    --gold-light: #e6c76b;
+    --dark-bg: #0e1117;
+}
+
+/* --> titles */
+h1, h2, h3 {
+    color: white !important;
+}
+
+/* --> header title */
+.header-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+
+    background: linear-gradient(90deg, #d4af37, #c08a5a, #d4af37);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+    0% {background-position: 0%}
+    100% {background-position: 200%}
+}
+
+.header-sub {
+    text-align: center;
+    color: gray;
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+/* --> metric container : kpi cards */
+[data-testid="metric-container"] {
+    background: rgba(212,175,55,0.06);
+    border: 1px solid rgba(212,175,55,0.25);
+    border-radius: 14px;
+    padding: 10px;
+}
+
+/* --> metric value : kpi values */
+[data-testid="stMetricValue"] {
+    color: var(--gold) !important;
+    font-weight: 700;
+}
+
+/* --> filter tags */
+[data-baseweb="tag"] {
+    background-color: var(--gold) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    font-weight: 600;
+}
+
+/* --> chart containers */
+.element-container:has(.js-plotly-plot) {
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 16px;
+    background: rgba(255,255,255,0.02);
+}
+
+/* --> sidebar */
+section[data-testid="stSidebar"] {
+    background-color: var(--dark-bg) !important;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+    width: 280px !important;
+}
+
+/* sidebar spacing */
+section[data-testid="stSidebar"] > div:first-child {
+    padding-top: 1rem;
+}
+
+/* --> download button */
+.stDownloadButton button {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.stDownloadButton button:hover {
+    background-color: var(--gold);
+    color: black;
+}
+
+/* --> summary positive */
+.summary-positive {
+    background: linear-gradient(90deg, rgba(0,150,100,0.2), rgba(0,200,150,0.1));
+    border: 1px solid rgba(0,200,150,0.4);
+    padding: 14px 18px;
+    border-radius: 12px;
+    color: #00e6a8;
+    font-weight: 500;
+}
+
+.summary-negative {
+    background: linear-gradient(90deg, rgba(255,180,0,0.15), rgba(255,180,0,0.05));
+    border: 1px solid rgba(255,180,0,0.4);
+    padding: 14px 18px;
+    border-radius: 12px;
+    color: #ffd166;
+    font-weight: 500;
+}
+
+/* --> tabs */
+button[data-baseweb="tab"] {
+    font-weight: 600;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: var(--gold) !important;
+    border-bottom: 2px solid var(--gold) !important;
+}

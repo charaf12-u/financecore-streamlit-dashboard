@@ -1,0 +1,152 @@
+{
+    "project_name": "FinanceCore Dashboard Analytics Multi-Pages",
+    "project_type": "Data Analytics & Business Intelligence (Streamlit + PostgreSQL)",
+    "dataset": "financecore_db (PostgreSQL)",
+    "total_rows": null,
+    "total_columns": null,
+    "deadline": "17/04/2026",
+    "jira_mapping": {
+        "epic": "Epic",
+        "task": "Tâche",
+        "subtask": "Sous-tâche"
+    },
+    "epics": [
+        {
+            "epic": "Connexion et Préparation des Données",
+            "tasks": [
+                {
+                    "task_name": "Connexion à PostgreSQL via SQLAlchemy",
+                    "subtasks": [
+                        "Installer SQLAlchemy et psycopg2",
+                        "Créer le engine de connexion vers financecore_db",
+                        "Tester la connexion entre Streamlit et la base de données"
+                    ]
+                },
+                {
+                    "task_name": "Préparation des données pour le dashboard",
+                    "subtasks": [
+                        "Identifier les tables principales (clients, transactions, produits, agences)",
+                        "Créer des DataFrames depuis SQL queries",
+                        "Nettoyer et valider les données extraites"
+                    ]
+                }
+            ]
+        },
+        {
+            "epic": "Développement de la Vue Exécutive",
+            "tasks": [
+                {
+                    "task_name": "Création des KPIs principaux",
+                    "subtasks": [
+                        "Calculer volume total des transactions",
+                        "Calculer chiffre d'affaires total (CA)",
+                        "Calculer nombre de clients actifs",
+                        "Calculer marge moyenne"
+                    ]
+                },
+                {
+                    "task_name": "Visualisations Vue Exécutive",
+                    "subtasks": [
+                        "Créer graphique d'évolution mensuelle (débits vs crédits)",
+                        "Créer bar chart CA par agence",
+                        "Créer bar chart CA par produit bancaire",
+                        "Créer pie chart segmentation clients (Premium/Standard/Risque)"
+                    ]
+                }
+            ]
+        },
+        {
+            "epic": "Analyse des Risques Clients",
+            "tasks": [
+                {
+                    "task_name": "Analyse corrélation des risques",
+                    "subtasks": [
+                        "Créer heatmap de corrélation (score crédit, montant, taux de rejet)",
+                        "Analyser les relations entre variables financières"
+                    ]
+                },
+                {
+                    "task_name": "Détection des clients à risque",
+                    "subtasks": [
+                        "Créer scatter plot score crédit vs montant transaction",
+                        "Classifier les clients par niveau de risque",
+                        "Identifier top 10 clients à risque"
+                    ]
+                }
+            ]
+        },
+        {
+            "epic": "Interface Interactive (Streamlit UI)",
+            "tasks": [
+                {
+                    "task_name": "Implémentation des filtres dynamiques",
+                    "subtasks": [
+                        "Créer filtre Agence dans sidebar",
+                        "Créer filtre Segment client",
+                        "Créer filtre Produit bancaire",
+                        "Créer filtre Période (slider années)"
+                    ]
+                },
+                {
+                    "task_name": "Rendre les graphiques interactifs",
+                    "subtasks": [
+                        "Relier tous les graphiques aux filtres",
+                        "Actualiser les KPIs dynamiquement",
+                        "Gérer les états de session Streamlit"
+                    ]
+                }
+            ]
+        },
+        {
+            "epic": "Export et Reporting",
+            "tasks": [
+                {
+                    "task_name": "Export des données filtrées",
+                    "subtasks": [
+                        "Créer bouton export CSV",
+                        "Exporter les données filtrées en temps réel",
+                        "Valider la cohérence des exports"
+                    ]
+                },
+                {
+                    "task_name": "Préparation reporting",
+                    "subtasks": [
+                        "Structurer les insights clés",
+                        "Préparer vues pour démonstration",
+                        "Optimiser lisibilité du dashboard"
+                    ]
+                }
+            ]
+        },
+        {
+            "epic": "Organisation Projet & Livraison",
+            "tasks": [
+                {
+                    "task_name": "Structuration du projet GitHub",
+                    "subtasks": [
+                        "Créer architecture multi-pages Streamlit",
+                        "Organiser dossiers (pages, utils, db, logs)",
+                        "Ajouter requirements.txt"
+                    ]
+                },
+                {
+                    "task_name": "Suivi Jira et documentation",
+                    "subtasks": [
+                        "Créer Epics et Tasks dans Jira",
+                        "Documenter les KPIs calculés",
+                        "Mettre à jour l'avancement quotidien"
+                    ]
+                },
+                {
+                    "task_name": "Préparation de la soutenance",
+                    "subtasks": [
+                        "Préparer démo (connexion DB + dashboard)",
+                        "Expliquer KPIs et logique métier",
+                        "Justifier choix des visualisations",
+                        "Simuler navigation avec filtres"
+                    ]
+                }
+            ]
+        }
+    ]
+}
